@@ -1,0 +1,61 @@
+
+
+
+source odoo16-venv/bin/activate
+
+
+
+sudo apt install python3-pip python3-venv
+python3 -m venv <venv-directory>
+
+sudo apt install python3-dev libxml2-dev libxslt1-dev libldap2-dev libssl-dev libsasl2-dev libpq-dev libjpeg8-dev
+
+pip3 install -r requirements.txt
+
+
+---------
+
+ Install Wkhtmltopdf
+ 
+sudo apt-get install xfonts-75dpi
+sudo wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb
+sudo dpkg -i wkhtmltox_0.12.6-1.bionic_amd64.deb
+sudo cp /usr/local/bin/wkhtmltoimage  /usr/bin/wkhtmltoimage
+sudo cp /usr/local/bin/wkhtmltopdf  /usr/bin/wkhtmltopdf
+ 
+ 
+ 
+
+
+pgadmin
+
+https://tecadmin.net/how-to-install-pgadmin4-on-ubuntu-20-04/
+sudo /usr/pgadmin4/bin/setup-web.sh
+
+
+
+sudo passwd postgres
+
+sudo su -l postgres 
+psql
+
+create new role:
+
+CREATE ROLE murugan WITH LOGIN SUPERUSER PASSWORD 'murugan123';
+
+
+
+
+
+
+Eclipse:
+
+Drag and drop plug in:
+
+https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=114
+
+
+
+
+
+
